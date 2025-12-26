@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gebäudereinigung Musterfirma</title>
+  <title>BC Service - Gebäudereinigung</title>
 
+  <link rel="stylesheet" href="style.css">
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
@@ -14,136 +15,133 @@
 
 <body class="text-gray-800">
 
-  <header class="fixed top-0 left-0 right-0 bg-white shadow z-50">
-    <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
-      <span class="font-bold text-lg">Musterfirma</span>
+<header class="fixed top-0 left-0 right-0 bg-white z-50 border-b" style="border-color:#5FAF8E">
+  <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
+    <span class="font-bold text-lg" style="color:#2F6F5B">BC Service</span>
 
-      <nav class="hidden md:flex space-x-6 text-sm">
-        <a href="#leistungen" class="hover:text-blue-600">Leistungen</a>
-        <a href="#warum" class="hover:text-blue-600">Warum wir</a>
-        <a href="#kontakt" class="hover:text-blue-600">Kontakt</a>
-      </nav>
+    <nav class="hidden md:flex space-x-6 text-sm">
+      <a href="#header">Start</a>
+      <a href="#leistungen">Leistungen</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
 
-      <button id="menuBtn" class="md:hidden text-2xl focus:outline-none">
-        ☰
-      </button>
-    </div>
+    <button id="menuBtn" class="md:hidden text-2xl" style="color:#2F6F5B">☰</button>
+  </div>
 
-    <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
-      <a href="#leistungen" class="block px-4 py-3 border-b">Leistungen</a>
-      <a href="#warum" class="block px-4 py-3 border-b">Warum wir</a>
-      <a href="#kontakt" class="block px-4 py-3">Kontakt</a>
-    </div>
-  </header>
+  <div id="mobileMenu" class="hidden md:hidden bg-white border-t" style="border-color:#5FAF8E">
+    <a href="#header" class="block px-4 py-3 border-b">Start</a>
+    <a href="#leistungen" class="block px-4 py-3 border-b">Leistungen</a>
+    <a href="#kontakt" class="block px-4 py-3">Kontakt</a>
+  </div>
+</header>
 
-  <section class="pt-24 bg-gray-100">
-    <div class="max-w-6xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-10 items-center">
-      <div>
-        <h1 class="text-4xl font-bold mb-6">
-          Professionelle Gebäudereinigung in Berlin
-        </h1>
-        <p class="text-gray-600 mb-8">
-          Zuverlässige Reinigung für Büros, Treppenhäuser und Gewerbeflächen.
-        </p>
-        <a href="#kontakt" class="inline-block bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">
-          Kostenloses Angebot anfordern
-        </a>
-      </div>
-      <div class="h-64 bg-gray-300 rounded"></div>
-    </div>
-  </section>
-
-  <section id="leistungen" class="max-w-6xl mx-auto px-4 py-20">
-    <h2 class="text-3xl font-bold mb-12 text-center">Unsere Leistungen</h2>
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="p-6 border rounded">
-        <h3 class="font-semibold mb-2">Büroreinigung</h3>
-        <p class="text-gray-600 text-sm">
-          Regelmäßige und gründliche Reinigung Ihrer Büroräume.
-        </p>
-      </div>
-      <div class="p-6 border rounded">
-        <h3 class="font-semibold mb-2">Treppenhausreinigung</h3>
-        <p class="text-gray-600 text-sm">
-          Saubere und gepflegte Eingangsbereiche.
-        </p>
-      </div>
-      <div class="p-6 border rounded">
-        <h3 class="font-semibold mb-2">Grundreinigung</h3>
-        <p class="text-gray-600 text-sm">
-          Intensive Reinigung für besondere Anforderungen.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section id="warum" class="bg-gray-100 py-20">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold mb-10">Warum wir?</h2>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div>
-          <p class="font-semibold mb-2">Zuverlässig</p>
-          <p class="text-gray-600 text-sm">
-            Pünktlich, gründlich und vertrauenswürdig.
-          </p>
-        </div>
-        <div>
-          <p class="font-semibold mb-2">Erfahren</p>
-          <p class="text-gray-600 text-sm">
-            Langjährige Erfahrung in der Gebäudereinigung.
-          </p>
-        </div>
-        <div>
-          <p class="font-semibold mb-2">Fair</p>
-          <p class="text-gray-600 text-sm">
-            Transparente Preise ohne versteckte Kosten.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="kontakt" class="max-w-6xl mx-auto px-4 py-20">
-    <h2 class="text-3xl font-bold mb-10 text-center">Kontakt</h2>
-    <div class="max-w-xl mx-auto text-center">
-      <p class="mb-6 text-gray-600">
-        Kontaktieren Sie uns für ein unverbindliches Angebot.
+<section id="header" class="pt-24">
+  <div class="max-w-6xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h1 class="text-4xl font-bold mb-6">
+        Gebäudereinigung & Hausmeisterservice in Berlin
+      </h1>
+      <p class="mb-8 text-gray-700">
+        Zuverlässige Dienstleistungen für Gebäude, Wohnungen und Außenanlagen.
       </p>
-      <div class="space-y-4">
-        <a href="tel:+491234567890" class="block bg-blue-600 text-white py-3 rounded hover:bg-blue-700">
-          📞 +49 123 4567890
-        </a>
-        <a href="mailto:info@musterfirma.de" class="block border py-3 rounded hover:bg-gray-100">
-          ✉️ info@musterfirma.de
-        </a>
-      </div>
+      <a href="#kontakt" class="inline-block text-white px-6 py-3 rounded" style="background-color:#5FAF8E">
+        Kostenloses Angebot anfordern
+      </a>
     </div>
-  </section>
 
-  <footer class="bg-gray-900 text-gray-300 text-sm">
-    <div class="max-w-6xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between">
-      <p>© 2025 Musterfirma</p>
-      <div class="space-x-4">
-        <a href="impressum.html" class="hover:underline">Impressum</a>
-        <a href="datenschutz.html" class="hover:underline">Datenschutz</a>
-      </div>
+    <div id="heroSlider" class="h-64 rounded image-1">
+      <div id="slideA" class="slide-layer"></div>
+      <div id="slideB" class="slide-layer"></div>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <script>
-    const menuBtn = document.getElementById('menuBtn')
-    const mobileMenu = document.getElementById('mobileMenu')
+<section id="leistungen" class="max-w-6xl mx-auto px-4 py-20">
+  <h2 class="text-3xl font-bold mb-12 text-center">Unsere Leistungen</h2>
 
-    menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden')
+  <div class="flex flex-wrap justify-evenly gap-8">
+    <div class="p-6 rounded bg-white border w-full max-w-sm" style="border-color:#5FAF8E">
+      <h3 class="font-semibold mb-2">🧼 Gebäudereinigung</h3>
+      <p class="text-gray-600 text-sm">Reinigung von Wohn- und Geschäftsgebäuden.</p>
+    </div>
+    <div class="p-6 rounded bg-white border w-full max-w-sm" style="border-color:#5FAF8E">
+      <h3 class="font-semibold mb-2">🌳 Garten- und Landschaftsbau</h3>
+      <p class="text-gray-600 text-sm">Pflege und Gestaltung von Außenanlagen.</p>
+    </div>
+    <div class="p-6 rounded bg-white border w-full max-w-sm" style="border-color:#5FAF8E">
+      <h3 class="font-semibold mb-2">🔧 Hausmeisterservice</h3>
+      <p class="text-gray-600 text-sm">Betreuung und kleine Reparaturen.</p>
+    </div>
+    <div class="p-6 rounded bg-white border w-full max-w-sm" style="border-color:#5FAF8E">
+      <h3 class="font-semibold mb-2">🏠 Wohnungsauflösungen</h3>
+      <p class="text-gray-600 text-sm">Diskrete Haushaltsauflösungen.</p>
+    </div>
+    <div class="p-6 rounded bg-white border w-full max-w-sm" style="border-color:#5FAF8E">
+      <h3 class="font-semibold mb-2">🚚 Entrümpelungen</h3>
+      <p class="text-gray-600 text-sm">Schnelle und saubere Entrümpelung.</p>
+    </div>
+  </div>
+</section>
+
+<section id="kontakt" class="max-w-6xl mx-auto px-4 py-20 text-center">
+  <h2 class="text-3xl font-bold mb-10">Kontakt</h2>
+  <a href="tel:017634634295" class="block text-white py-3 rounded mb-4" style="background-color:#2F6F5B">
+    📞 0176 34634295
+  </a>
+  <a href="mailto:bcservice030@gmail.com" class="block py-3 rounded border" style="border-color:#5FAF8E">
+    ✉️ bcservice030@gmail.com
+  </a>
+</section>
+
+<script>
+  const images = [
+    'images/pic-1.jpg',
+    'images/pic-2.jpg',
+    'images/pic-3.jpg'
+  ]
+
+  const slideA = document.getElementById('slideA')
+  const slideB = document.getElementById('slideB')
+
+  let index = 0
+  let active = slideA
+  let next = slideB
+
+  active.style.backgroundImage = `url(${images[0]})`
+  active.style.transform = 'translateX(0)'
+  next.style.transform = 'translateX(100%)'
+
+  const slideToNext = () => {
+    const nextIndex = (index + 1) % images.length
+
+    next.classList.remove('no-transition')
+    next.style.backgroundImage = `url(${images[nextIndex]})`
+    next.style.transform = 'translateX(100%)'
+
+    requestAnimationFrame(() => {
+      active.style.transform = 'translateX(-100%)'
+      next.style.transform = 'translateX(0)'
     })
 
-    mobileMenu.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden')
+    setTimeout(() => {
+      active.classList.add('no-transition')
+      active.style.transform = 'translateX(100%)'
+
+      const tmp = active
+      active = next
+      next = tmp
+
+      index = nextIndex
+
+      requestAnimationFrame(() => {
+        active.classList.remove('no-transition')
       })
-    })
-  </script>
+    }, 900)
+  }
+
+  setTimeout(slideToNext, 1500)
+  setInterval(slideToNext, 4500)
+</script>
 
 </body>
 </html>

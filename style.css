@@ -1,0 +1,25 @@
+body {
+  background-color: #EEF6F2;
+  color: #1F2933;
+}
+
+.image-1{
+  position: relative;
+  overflow: hidden;
+}
+
+.slide-layer{
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.9s ease-in-out;
+  will-change: transform;
+}
+
+.slide-layer.no-transition{
+  transition: none;
+}
+
+#slideA{ z-index: 2; }
+#slideB{ z-index: 1; }
