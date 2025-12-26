@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,139 +10,155 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
   </style>
 </head>
 
 <body class="text-gray-800">
 
-<header class="fixed top-0 left-0 right-0 bg-white z-50 border-b" style="border-color:#5FAF8E">
-  <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
-    <span class="font-bold text-lg" style="color:#2F6F5B">BC Service</span>
+  <header class="fixed top-0 left-0 right-0 bg-white z-50 border-b" style="border-color:#5FAF8E">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
+      <span class="font-bold text-lg" style="color:#2F6F5B">BC Service</span>
 
-    <nav class="hidden md:flex space-x-6 text-sm">
-      <a href="#header">Start</a>
-      <a href="#leistungen">Leistungen</a>
-      <a href="#kontakt">Kontakt</a>
-    </nav>
+      <nav class="hidden md:flex space-x-6 text-sm">
+        <a href="#header">Start</a>
+        <a href="#leistungen">Leistungen</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
 
-    <button id="menuBtn" class="md:hidden text-2xl" style="color:#2F6F5B">☰</button>
-  </div>
+      <button id="menuBtn" class="md:hidden text-2xl" style="color:#2F6F5B">☰</button>
+    </div>
 
-  <div id="mobileMenu" class="hidden md:hidden bg-white border-t" style="border-color:#5FAF8E">
-    <a href="#header" class="block px-4 py-3 border-b">Start</a>
-    <a href="#leistungen" class="block px-4 py-3 border-b">Leistungen</a>
-    <a href="#kontakt" class="block px-4 py-3">Kontakt</a>
-  </div>
-</header>
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t" style="border-color:#5FAF8E">
+      <a href="#header" class="block px-4 py-3 border-b">Start</a>
+      <a href="#leistungen" class="block px-4 py-3 border-b">Leistungen</a>
+      <a href="#kontakt" class="block px-4 py-3">Kontakt</a>
+    </div>
+  </header>
 
-<section id="header" class="pt-24">
-  <div class="max-w-6xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-10 items-center">
-    <div>
-      <h1 class="text-4xl font-bold mb-6">
-        Gebäudereinigung & Hausmeisterservice in Berlin
-      </h1>
-      <p class="mb-8 text-gray-700">
-        Zuverlässige Dienstleistungen für Gebäude, Wohnungen und Außenanlagen.
-      </p>
-      <a href="#kontakt" class="inline-block text-white px-6 py-3 rounded" style="background-color:#5FAF8E">
-        Kostenloses Angebot anfordern
+  <section id="header" class="pt-24">
+    <div class="max-w-6xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-4xl font-bold mb-6">
+          Gebäudereinigung & Hausmeisterservice in Berlin
+        </h1>
+        <p class="mb-8 text-gray-700">
+          Zuverlässige Dienstleistungen für Gebäude, Wohnungen und Außenanlagen.
+        </p>
+        <a href="#kontakt" class="inline-block text-white px-6 py-3 rounded" style="background-color:#5FAF8E">
+          Kostenloses Angebot anfordern
+        </a>
+      </div>
+
+      <div id="heroSlider" class="h-64 rounded image-1">
+        <div id="slideA" class="slide-layer"></div>
+        <div id="slideB" class="slide-layer"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="leistungen" class="max-w-6xl mx-auto px-4 py-20">
+    <h2 class="text-3xl font-bold mb-12 text-center">Unsere Leistungen</h2>
+
+    <div class="flex flex-wrap justify-evenly gap-8">
+      <div class="p-6 rounded bg-white border w-full max-w-sm" style="border-color:#5FAF8E">
+        <h3 class="font-semibold mb-2">🧼 Gebäudereinigung</h3>
+        <p class="text-gray-600 text-sm">Reinigung von Wohn- und Geschäftsgebäuden.</p>
+      </div>
+      <div class="p-6 rounded bg-white border w-full max-w-sm" style="border-color:#5FAF8E">
+        <h3 class="font-semibold mb-2">🌳 Garten- und Landschaftsbau</h3>
+        <p class="text-gray-600 text-sm">Pflege und Gestaltung von Außenanlagen.</p>
+      </div>
+      <div class="p-6 rounded bg-white border w-full max-w-sm" style="border-color:#5FAF8E">
+        <h3 class="font-semibold mb-2">🔧 Hausmeisterservice</h3>
+        <p class="text-gray-600 text-sm">Betreuung und kleine Reparaturen.</p>
+      </div>
+      <div class="p-6 rounded bg-white border w-full max-w-sm" style="border-color:#5FAF8E">
+        <h3 class="font-semibold mb-2">🏠 Wohnungsauflösungen</h3>
+        <p class="text-gray-600 text-sm">Diskrete Haushaltsauflösungen.</p>
+      </div>
+      <div class="p-6 rounded bg-white border w-full max-w-sm" style="border-color:#5FAF8E">
+        <h3 class="font-semibold mb-2">🚚 Entrümpelungen</h3>
+        <p class="text-gray-600 text-sm">Schnelle und saubere Entrümpelung.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontakt" class="max-w-6xl mx-auto px-4 py-20">
+    <h2 class="text-3xl font-bold mb-10 text-center">Kontakt</h2>
+
+    <div class="max-w-xl mx-auto bg-white rounded border p-8 text-center" style="border-color:#5FAF8E">
+      <div class="my-6 space-y-3">
+        <a href="tel:017634634295" class="block text-white py-3 rounded" style="background-color:#2F6F5B">
+          📞 0176 34634295
+        </a>
+        <a href="mailto:bcservice030@gmail.com" class="block py-3 rounded border" style="border-color:#5FAF8E">
+          ✉️ bcservice030@gmail.com
+        </a>
+        <a href="https://www.google.com/maps?q=Finsterwalder+Str.+72,+13435+Berlin" style="border-color:#5FAF8E" target="_blank"
+        rel="noopener noreferrer" class="block py-3 rounded border">
+        📍 Finsterwalder Str. 72, 13435 Berlin
       </a>
+      
     </div>
+    <p class="font-semibold text-lg mb-1">Cengiz Coskun</p>
+    <p class="text-sm text-gray-600 mb-4">Inhaber - BC Service</p>
 
-    <div id="heroSlider" class="h-64 rounded image-1">
-      <div id="slideA" class="slide-layer"></div>
-      <div id="slideB" class="slide-layer"></div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="leistungen" class="max-w-6xl mx-auto px-4 py-20">
-  <h2 class="text-3xl font-bold mb-12 text-center">Unsere Leistungen</h2>
+  <script>
+    const images = [
+      'images/pic-1.jpg',
+      'images/pic-2.jpg',
+      'images/pic-3.jpg'
+    ]
 
-  <div class="flex flex-wrap justify-evenly gap-8">
-    <div class="p-6 rounded bg-white border w-full max-w-sm" style="border-color:#5FAF8E">
-      <h3 class="font-semibold mb-2">🧼 Gebäudereinigung</h3>
-      <p class="text-gray-600 text-sm">Reinigung von Wohn- und Geschäftsgebäuden.</p>
-    </div>
-    <div class="p-6 rounded bg-white border w-full max-w-sm" style="border-color:#5FAF8E">
-      <h3 class="font-semibold mb-2">🌳 Garten- und Landschaftsbau</h3>
-      <p class="text-gray-600 text-sm">Pflege und Gestaltung von Außenanlagen.</p>
-    </div>
-    <div class="p-6 rounded bg-white border w-full max-w-sm" style="border-color:#5FAF8E">
-      <h3 class="font-semibold mb-2">🔧 Hausmeisterservice</h3>
-      <p class="text-gray-600 text-sm">Betreuung und kleine Reparaturen.</p>
-    </div>
-    <div class="p-6 rounded bg-white border w-full max-w-sm" style="border-color:#5FAF8E">
-      <h3 class="font-semibold mb-2">🏠 Wohnungsauflösungen</h3>
-      <p class="text-gray-600 text-sm">Diskrete Haushaltsauflösungen.</p>
-    </div>
-    <div class="p-6 rounded bg-white border w-full max-w-sm" style="border-color:#5FAF8E">
-      <h3 class="font-semibold mb-2">🚚 Entrümpelungen</h3>
-      <p class="text-gray-600 text-sm">Schnelle und saubere Entrümpelung.</p>
-    </div>
-  </div>
-</section>
+    const slideA = document.getElementById('slideA')
+    const slideB = document.getElementById('slideB')
 
-<section id="kontakt" class="max-w-6xl mx-auto px-4 py-20 text-center">
-  <h2 class="text-3xl font-bold mb-10">Kontakt</h2>
-  <a href="tel:017634634295" class="block text-white py-3 rounded mb-4" style="background-color:#2F6F5B">
-    📞 0176 34634295
-  </a>
-  <a href="mailto:bcservice030@gmail.com" class="block py-3 rounded border" style="border-color:#5FAF8E">
-    ✉️ bcservice030@gmail.com
-  </a>
-</section>
+    let index = 0
+    let active = slideA
+    let next = slideB
 
-<script>
-  const images = [
-    'images/pic-1.jpg',
-    'images/pic-2.jpg',
-    'images/pic-3.jpg'
-  ]
-
-  const slideA = document.getElementById('slideA')
-  const slideB = document.getElementById('slideB')
-
-  let index = 0
-  let active = slideA
-  let next = slideB
-
-  active.style.backgroundImage = `url(${images[0]})`
-  active.style.transform = 'translateX(0)'
-  next.style.transform = 'translateX(100%)'
-
-  const slideToNext = () => {
-    const nextIndex = (index + 1) % images.length
-
-    next.classList.remove('no-transition')
-    next.style.backgroundImage = `url(${images[nextIndex]})`
+    active.style.backgroundImage = `url(${images[0]})`
+    active.style.transform = 'translateX(0)'
     next.style.transform = 'translateX(100%)'
 
-    requestAnimationFrame(() => {
-      active.style.transform = 'translateX(-100%)'
-      next.style.transform = 'translateX(0)'
-    })
+    const slideToNext = () => {
+      const nextIndex = (index + 1) % images.length
 
-    setTimeout(() => {
-      active.classList.add('no-transition')
-      active.style.transform = 'translateX(100%)'
-
-      const tmp = active
-      active = next
-      next = tmp
-
-      index = nextIndex
+      next.classList.remove('no-transition')
+      next.style.backgroundImage = `url(${images[nextIndex]})`
+      next.style.transform = 'translateX(100%)'
 
       requestAnimationFrame(() => {
-        active.classList.remove('no-transition')
+        active.style.transform = 'translateX(-100%)'
+        next.style.transform = 'translateX(0)'
       })
-    }, 900)
-  }
 
-  setTimeout(slideToNext, 1500)
-  setInterval(slideToNext, 4500)
-</script>
+      setTimeout(() => {
+        active.classList.add('no-transition')
+        active.style.transform = 'translateX(100%)'
+
+        const tmp = active
+        active = next
+        next = tmp
+
+        index = nextIndex
+
+        requestAnimationFrame(() => {
+          active.classList.remove('no-transition')
+        })
+      }, 900)
+    }
+
+    setTimeout(slideToNext, 1500)
+    setInterval(slideToNext, 4500)
+  </script>
 
 </body>
+
 </html>
