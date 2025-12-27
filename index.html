@@ -31,7 +31,8 @@
       <button id="menuBtn" class="md:hidden text-2xl" style="color:#2F6F5B">☰</button>
     </div>
 
-    <div id="mobileMenu" class="hidden md:hidden bg-white border-t" style="border-color:#5FAF8E">
+    <div id="mobileMenu" class="hidden md:hidden absolute top-full left-0 right-0 bg-white border-t z-50"
+      style="border-color:#5FAF8E">
       <a href="#header" class="block px-4 py-3 border-b">Start</a>
       <a href="#leistungen" class="block px-4 py-3 border-b">Leistungen</a>
       <a href="#kontakt" class="block px-4 py-3">Kontakt</a>
@@ -97,56 +98,59 @@
         <a href="mailto:bcservice030@gmail.com" class="block py-3 rounded border" style="border-color:#5FAF8E">
           ✉️ bcservice030@gmail.com
         </a>
-        <a href="https://www.google.com/maps?q=Finsterwalder+Str.+72,+13435+Berlin" style="border-color:#5FAF8E" target="_blank"
-        rel="noopener noreferrer" class="block py-3 rounded border">
-        📍 Finsterwalder Str. 72, 13435 Berlin
-      </a>
-      
-    </div>
-    <p class="font-semibold text-lg mb-1">Cengiz Coskun</p>
-    <p class="text-sm text-gray-600 mb-4">Inhaber - BC Service</p>
+        <a href="https://www.google.com/maps?q=Finsterwalder+Str.+72,+13435+Berlin" style="border-color:#5FAF8E"
+          target="_blank" rel="noopener noreferrer" class="block py-3 rounded border">
+          📍 Finsterwalder Str. 72, 13435 Berlin
+        </a>
+
+      </div>
+      <p class="font-semibold text-lg mb-1">Cengiz Coskun</p>
+      <p class="text-sm text-gray-600 mb-4">Inhaber - BC Service</p>
 
     </div>
   </section>
 
   <footer class="bg-white border-t mt-20" style="border-color:#5FAF8E">
-  <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-gray-700">
+    <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-gray-700">
 
-    <div class="flex flex-col md:flex-row justify-between gap-6">
+      <div class="flex flex-col md:flex-row justify-between gap-6">
 
-      <div>
-        <p class="font-semibold">BC Service</p>
-        <p>Cengiz Coskun – Inhaber</p>
-        <a
-          href="https://www.google.com/maps?q=Finsterwalder+Str.+72,+13435+Berlin"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="hover:underline"
-        >
-          Finsterwalder Str. 72, 13435 Berlin
-        </a>
+        <div>
+          <p class="font-semibold">BC Service</p>
+          <p>Cengiz Coskun – Inhaber</p>
+          <a href="https://www.google.com/maps?q=Finsterwalder+Str.+72,+13435+Berlin" target="_blank"
+            rel="noopener noreferrer" class="hover:underline">
+            Finsterwalder Str. 72, 13435 Berlin
+          </a>
+        </div>
+
+        <div>
+          <p>📞 <a href="tel:017634634295" class="hover:underline">0176 34634295</a></p>
+          <p>✉️ <a href="mailto:bcservice030@gmail.com" class="hover:underline">bcservice030@gmail.com</a></p>
+        </div>
+
+        <div class="md:text-right">
+          <a href="impressum.html" class="hover:underline block">Impressum</a>
+          <a href="datenschutz.html" class="hover:underline block">Datenschutz</a>
+        </div>
+
       </div>
 
-      <div>
-        <p>📞 <a href="tel:017634634295" class="hover:underline">0176 34634295</a></p>
-        <p>✉️ <a href="mailto:bcservice030@gmail.com" class="hover:underline">bcservice030@gmail.com</a></p>
-      </div>
-
-      <div class="md:text-right">
-        <a href="impressum.html" class="hover:underline block">Impressum</a>
-        <a href="datenschutz.html" class="hover:underline block">Datenschutz</a>
-      </div>
+      <p class="mt-6 text-center text-gray-500">
+        © 2025 BC Service
+      </p>
 
     </div>
-
-    <p class="mt-6 text-center text-gray-500">
-      © 2025 BC Service
-    </p>
-
-  </div>
-</footer>
+  </footer>
 
   <script>
+
+    const menuBtn = document.getElementById('menuBtn')
+    const mobileMenu = document.getElementById('mobileMenu')
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden')
+    })
     const images = [
       'images/pic-1.jpg',
       'images/pic-2.jpg',
