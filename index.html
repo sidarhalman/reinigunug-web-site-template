@@ -151,8 +151,25 @@
     const menuBtn = document.getElementById('menuBtn')
     const mobileMenu = document.getElementById('mobileMenu')
 
-    menuBtn.addEventListener('click', () => {
+    menuBtn.addEventListener('click', (e) => {
+      e.stopPropagation()
       mobileMenu.classList.toggle('hidden')
+    })
+
+    mobileMenu.addEventListener('click', (e) => {
+      e.stopPropagation()
+    })
+
+    document.addEventListener('click', () => {
+      if (!mobileMenu.classList.contains('hidden')) {
+        mobileMenu.classList.add('hidden')
+      }
+    })
+
+    mobileMenu.querySelectorAll('a').forEach((a) => {
+      a.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden')
+      })
     })
     const images = [
       'images/pic-1.jpg',
